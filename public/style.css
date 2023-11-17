@@ -1,0 +1,162 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the containers and loading animation */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.form-container, .output-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.loading {
+    display: none;
+}
+
+/* Styles for the output history entries */
+.history-entry {
+    background-color: #F9F9F9;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+/* Styles for modals */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional styles for buttons */
+button {
+    background-color: #4C5B5C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a4b4c;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid column sizes as needed */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+.tool-card {
+    background-color: #F3F3F3;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.tool-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Style for the output content */
+.content-output {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+    background-color: #F3F3F3;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h1, .form-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Adjust form elements within the form card */
+.form-card .form-group {
+    margin-bottom: 15px;
+}
+
+.form-card .form-control {
+    border-radius: 5px;
+}
+
+.form-card button[type="submit"] {
+    background-color: #4C5B5C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-card button[type="submit"]:hover {
+    background-color: #3a4b4c;
+}
