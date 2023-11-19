@@ -59,7 +59,7 @@ function displayHistory() {
         entryDiv.appendChild(contentPreview);
         entryDiv.appendChild(expandButton);
         entryDiv.appendChild(copyButton);
-        entryDiv.appendChild(printButton);
+        //entryDiv.appendChild(printButton);
         entryDiv.appendChild(deleteButton);
 
         const modal = createModal(entry.response, index);
