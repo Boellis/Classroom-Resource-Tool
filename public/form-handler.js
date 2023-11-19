@@ -45,7 +45,7 @@ function createPrompt(data, formType) {
 
 function fetchChatGPTResponse(prompt, formId) {
     const apiEndpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-    const apiKey = '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'; // Replace with your actual API key
+    const apiKey = 'Open_API_KEY_HERE'; // Replace with your actual API key
 
     showLoading(true, formId);
 
